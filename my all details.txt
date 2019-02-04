@@ -13,3 +13,322 @@ https://www.dropbox.com/s/m3siyu8ari5ejlt/index.zip?dl=0
 https://www.dropbox.com/s/u8pim9lzh3uib9w/Creative%20Dot.zip?dl=0
 
 https://www.dropbox.com/s/08nbzdzv6c07za5/for%20interview.zip?dl=0
+
+https://github.com/oklai/koala/releases/download/v2.3.0/koala_2.3.0_x86_64.tar.gz
+https://github.com/oklai/koala/releases/download/v2.3.0/koala_2.3.0_i386.tar.gz
+
+
+
+
+
+@mixin box-shadow($color,$distance,$spread,$size) {
+    box-shadow: $color $distance $spread $size;
+    -webkit-box-shadow: $color $distance $spread $size;
+    -moz-box-shadow: $color $distance $spread $size;
+    -o-box-shadow: $color $distance $spread $size;
+    -ms-box-shadow: $color $distance $spread $size;
+}
+@mixin text-shadow($color,$distance,$spread,$size) {
+    text-shadow: $color $distance $spread $size;
+    -webkit-text-shadow: $color $distance $spread $size;
+    -moz-text-shadow: $color $distance $spread $size;
+    -o-text-shadow: $color $distance $spread $size;
+    -ms-text-shadow: $color $distance $spread $size;
+}
+@mixin visiblity($value){
+    visibility: $value;
+    -webkit-visibility: $value;
+    -moz-visibility: $value;
+    -o-visibility: $value;
+    -ms-visibility: $value;
+}
+@mixin overflowall($value){
+    overflow: $value;
+    -webkit-overflow: $value;
+    -moz-overflow: $value;
+    -o-overflow: $value;
+    -ms-overflow: $value;
+}
+@mixin overflowX($value){
+    overflow-x: $value;
+    -webkit-overflow-x: $value;
+    -moz-overflow-x: $value;
+    -o-overflow-x: $value;
+    -ms-overflow-x: $value;
+}
+@mixin overflowY($value){
+    overflow-y: $value;
+    -webkit-overflow-y: $value;
+    -moz-overflow-y: $value;
+    -o-overflow-y: $value;
+    -ms-overflow-y: $value;
+}
+@mixin transition($property,$duration,$type){
+    transition: $property $duration $type;
+    -webkit-transition: $property $duration $type;
+    -moz-transition: $property $duration $type;
+    -o-transition: $property $duration $type;
+}
+@mixin transform($value-type,$origin,$style){
+    transform: $value-type;
+    -webkit-transform: $value-type;
+    -moz-transform: $value-type;
+    -o-transform: $value-type;
+    transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    transform-style: $style;
+    -webkit-transform-style: $style;
+    -moz-transform-style: $style;
+    -o-transform-style: $style;
+}
+@mixin filter($value){
+    filter: $value;
+    -webkit-filter: $value;
+    -moz-filter: $value;
+    -o-filter: $value;
+}
+@mixin flexdisplay($value){
+    display:$value;
+    display:-webkit-$value;
+    display:-moz-$value;
+    display:-o-$value;
+    display:-ms-$value; 
+}
+@mixin flexdirection($direction){   
+    flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -o-flex-direction: $direction;
+    -ms-flex-direction: $direction; 
+}
+@mixin flexwrap($wrap){    
+    flex-flow: $wrap;
+    -webkit-flex-flow: $wrap;
+    -moz-flex-flow: $wrap;
+    -o-flex-flow: $wrap;
+    -ms-flex-flow: $wrap;   
+}
+@mixin flexgrow($grow){    
+    flex-grow: $grow;
+    -webkit-flex-grow: $grow;
+    -moz-flex-grow: $grow;
+    -o-flex-grow: $grow;
+    -ms-flex-grow: $grow;
+}
+@mixin flexshrink($shrink){    
+    flex-shrink: $shrink;
+    -webkit-flex-shrink: $shrink;
+    -moz-flex-shrink: $shrink;
+    -o-flex-shrink: $shrink;
+    -ms-flex-shrink: $shrink;
+}
+@mixin order($value){
+    order: $value;
+    -webkit-order: $value;
+    -moz-order: $value;
+    -o-order: $value;
+}
+@mixin flex($value){
+    flex: $value;
+    -webkit-flex: $value;
+    -moz-flex: $value;
+    -o-flex: $value;
+    -ms-flex: $value;
+}
+@mixin opacity($value){
+    opacity: $value;
+    filter: Alpha(opacity=$value);
+}
+@mixin animation($name,$time,$function,$count){
+    animation: $name $time $function $count;
+    -webkit-animation: $name $time $function $count;
+    -moz-animation: $name $time $function $count;
+    -o-animation: $name $time $function $count;
+    -ms-animation: $name $time $function $count;
+}
+@mixin backgroung-image($bg-url,$bg-repeat,$bg-size,$bg-attachment,$bg-position,$bg-width,$bg-height){
+    background-image: $bg-url;
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-attachment: $bg-attachment;
+    background-position: $bg-position;
+    width: $bg-width;
+    height: $bg-height;
+}
+@mixin background-color($bg-color,$bg-width,$bg-height){
+    background-color: $bg-color;
+    width: $bg-width;
+    height: $bg-height;
+}
+@mixin position($position,$top,$right,$bottom,$left){
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin outline($color,$style,$width){
+    outline-color: $color;
+    outline-style: $style;
+    outline-width: $width;
+}
+@mixin text($font-size,$color,$line-height,$text-align,$text-transform,$font-weight){
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    text-align: $text-align;
+    text-transform: $text-transform;
+    font-weight: $font-weight;
+}
+@mixin font($font-family){
+    font-family: $font-family;
+}
+@mixin align-items($display,$align-items){
+    display:$display;
+    display:-webkit-box;
+    display:-webkit-$display;
+    display:-moz-$display;
+    display:-o-$display;
+    display:-ms-$display;
+    align-items: $align-items;
+    -webkit-align-items: $align-items;
+    -webkit-box-align: $align-items;
+    -moz-box-align: $align-items;
+    -ms-flex-align: $align-items;
+}
+@mixin backface($value){
+    backface-visibility: $value;
+    -webkit-backface-visibility: $value;
+    -moz-backface-visibility: $value;
+    -o-backface-visibility: $value;
+    -ms-backface-visibility: $value;
+}
+@mixin width($width){
+    width: $width;
+}
+@mixin height($height){
+    height: $height;
+}
+@mixin margin($margin-top,$margin-right,$margin-bottom,$margin-left){
+    margin-top: $margin-top;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+}
+@mixin padding($padding-top,$padding-right,$padding-bottom,$padding-left){
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+}
+@mixin float($value){
+    float: $value;
+}
+@mixin common($width,$height,$float){
+    width: $width;
+    height: $height;
+    float: left;
+}
+@mixin border($border-color,$border-width,$border-style){
+    border-color: $border-color;
+    border-width: $border-width;
+    border-style: $border-style;
+}
+@mixin border-none($value){
+    border: $value;
+}
+@mixin border-radius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+
+
+$default-color:red;
+$primary-color:purple;
+$secondary-color:pink;
+$common-color:#000;
+
+$default-text-color:#000;
+$heading-text-color:red;
+$subheading-text-color:purple;
+$anchor-color:red;
+
+$heading-font:arial;
+$subheading-font:tahoma;
+
+$midium-screen: 'only screen and (min-width:1024px) and (max-width:1199px)';
+$large-tab: 'only screen and (min-width:768px) and (max-width:1023px)';
+$small-tab: 'only screen and (min-width:640px) and (max-width:767px)';
+$android: 'only screen and (min-width:480px) and (max-width:639px)';
+$small-screen: 'only screen and (min-width:320px) and (max-width:479px)';
+$Xsmall-screen: 'only screen and (max-width:319px)';
+
+
+.bannar{
+    @extend .common-full-width;
+    background: $primary-color;
+    height: 300px;
+    @media #{$midium-screen}{
+        background: pink;
+    }
+    @media #{$large-tab}{
+        background: #000;
+    }
+    @media #{$small-tab}{
+        background: red;
+    }
+    @media #{$android}{
+        background: #fff;
+    }
+    @media #{$small-screen}{
+        background: yellow;
+    }
+    @media #{$Xsmall-screen}{
+        background: yellow;
+    }
+}
+.test-bg{
+    @include backgroung-image(none,no-repeat,auto,inherit,inherit,400px,400px);
+    float: left;
+}
+.test-bg2{
+    @include background-color(#000,300px,400px);
+    float: left;
+    @include margin(0,0,0,30px);
+    @include padding(15px,0,0,0);
+}
+
+.test-align{
+    width: 300px; height: 300px; background: #000; float: left; @include align-items(flex,center); color: #fff;
+}
+.common-div{
+    @extend .common-full-width;
+    @extend .m-p;
+    background-color: $primary-color;
+    @include height(300px);
+}
+.bannar5{
+    @include backgroung-image(url(../images/lkjashx.jpg),no-repeat,cover,inherit,center,1000px,500px);
+}
+.bannar6{
+    @include background-color($primary-color,500px,500px);
+    @include float(left);
+}
+.bannar7{
+    backface-visibility: hidden;
+    width: 100%;
+    height: auto;
+}
+.bannar8{
+    width: 100%;
+    height: auto;
+}
+.bannar9{
+    width: 500px;
+    height: auto;
+}
